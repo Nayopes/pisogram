@@ -22,7 +22,7 @@ function App(props) {
           <Route path={'/'} element={<Home />} />
           <Route path={'/contact'} element={<Contact />} />
           <Route path={'/messages'} element={<Messages data={props.state.messagesPage} />} />
-          <Route path={'/profile'} element={<Profile data={props.state.profilePage} />} />
+          <Route path={'/profile'} element={<Profile data={props.state.profilePage} addPost={props.addPost} />} />
           <Route path={'/settings'} element={<Settings />} />
           <Route path={'/messages/*'} element={<Messages data={props.state.messagesPage} />} />
         </Routes>

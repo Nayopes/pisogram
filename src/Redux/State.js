@@ -1,17 +1,23 @@
 
+import {rerenderPage} from '../render';
+
 let state = {
     profilePage: {
         postsData: [
             {
+                id: 1,
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, sit. Porro deserunt nisi fugit eligendi autem mollitia quo.'
             },
             {
+                id: 2,
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, sit. Porro deserunt nisi fugit eligendi autem mollitia quo quas ad cupiditate.'
             },
             {
+                id: 3,
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, sit. Porro deserunt nisi fugit eligendi autem mollitia quo quas ad cupiditate.Porro deserunt nisi fugit eligendi autem mollitia quo quas ad cupiditate.'
             },
             {
+                id: 4,
                 text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, sit. Porro fugit eligendi autem mollitia quo quas ad cupiditate.'
             }
         ]
@@ -49,5 +55,16 @@ let state = {
     }
 
 }
+
+export let addPost = (postText) => {
+    let newPost = {
+        id: 1,
+        text: postText
+    };
+    state.profilePage.postsData.push(newPost);
+    rerenderPage(state);
+}
+
+
 
 export default state;
