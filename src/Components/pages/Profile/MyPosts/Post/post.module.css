@@ -1,0 +1,11 @@
+.postItem{
+    width: 300px;
+    padding: 20px;
+    min-height: 150px;
+    background-color: rgb(190, 224, 217);
+    border-radius: 14px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,25 @@
+.messagesTitle{
+    font-size: 24px;
+    color: rgb(90, 60, 20);
+}
+.messagesMain{
+    display: flex;
+}
+.userItems{
+    width: 20%;
+    padding: 40px 0 40px 40px;
+    background-color: rgb(236, 245, 245);
+    border-radius: 8px;
+    margin-right: 30px;
+    min-height: calc(100vh - 400px );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.messagesItems{
+    width: 60%;
+    padding: 40px 0 40px 40px;
+    background-color: rgb(237, 245, 245);
+    border-radius: 8px;
+}

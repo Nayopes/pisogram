@@ -1,0 +1,37 @@
+
+.addPostForm{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.inputPost{
+    width: calc(100% - 44px);
+    min-height: 200px;
+    border: 2px solid rgb(190, 224, 217);
+    border-radius: 12px;
+    padding: 10px 20px;
+    resize: vertical;
+    font-size: 18px;
+    outline: none;
+}
+.inputPost:focus{
+    border: 2px solid rgb(75, 207, 181);
+}
+.postBtnParent{
+    text-align: center;
+    margin: 20px 0 40px;
+}
+.postBtn{
+    padding: 8px 24px;
+    font-size: 18px;
+    color: rgba(90, 60, 20, 0.849);
+    background-color: rgb(190, 224, 217);
+    border: none;
+    border-radius: 8px;
+}
+.postsMain{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
